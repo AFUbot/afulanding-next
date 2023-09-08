@@ -3,7 +3,7 @@ import Image from "next/image";
 import Front from "../../public/3.png";
 import Logo from "../../public/AFUbot.svg";
 import Bottom from "../../public/bottom.png";
-import { Box, Button, Grid } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import AfuButton from "../AfuButtons/AfuButton";
 
 const Hero = () => {
@@ -23,6 +23,7 @@ const Hero = () => {
             }}
           >
             <Image style={{ height: 60 }} src={Logo}></Image>
+
             <Box sx={{ mt: 3 }}>
               <AfuButton
                 sx={{ marginTop: 3, marginRight: 2 }}
@@ -37,8 +38,26 @@ const Hero = () => {
                 textColor="white"
               ></AfuButton>
             </Box>
+            <Box
+              sx={{
+                display: { xs: "none", md: "block" },
+                position: "absolute",
+                bottom: 15,
+                right: 10,
+              }}
+            >
+              <Typography fontWeight="bold">
+                <span style={{ color: "#05ACEA" }}>Efficient</span>
+                {`, `}
+                <span style={{ color: "#05ACEA" }}>Reliable</span>
+                {`, and `}
+                <span style={{ color: "#05ACEA" }}>Contactless</span> Food
+                Delivery
+              </Typography>
+            </Box>
           </Box>
         </Grid>
+
         {/* <Grid
           item
           sx={{
