@@ -7,7 +7,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh, Color } from "three";
 
 import CanvasLoader from "./Loader";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Earth = () => {
   // const robot = useGLTF("./planet/scene.gltf");

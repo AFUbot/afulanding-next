@@ -10,14 +10,12 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <h1>
-        <Hero></Hero>
-        <Container maxWidth="xl">
-          <About></About>
-          <RobotCanvas></RobotCanvas>
-          <HowItWorks></HowItWorks>
-        </Container>
-      </h1>
+      <Hero></Hero>
+      <Container maxWidth="xl">
+        <About></About>
+        <RobotCanvas></RobotCanvas>
+        <HowItWorks></HowItWorks>
+      </Container>
     </div>
   );
 };
