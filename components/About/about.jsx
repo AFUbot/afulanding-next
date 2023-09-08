@@ -4,7 +4,7 @@ import Cards from "./AfuCards";
 
 const About = () => {
   return (
-    <Box sx={{ minHeight: "100vh", zIndex: 2 }}>
+    <Box sx={{ minHeight: "100vh", zIndex: 2, marginTop: "150px" }}>
       <Grid container spacing={12}>
         <Grid item md={12} lg={6}>
           <Typography variant="overline">Introduction</Typography>
