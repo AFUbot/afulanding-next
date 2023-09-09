@@ -1,8 +1,7 @@
-"use client";
 import StarsCanvas from "@/components/Stars";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Navbar from "../components/Navbar/navbar.jsx";
+import Navbar from "../components/Navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
