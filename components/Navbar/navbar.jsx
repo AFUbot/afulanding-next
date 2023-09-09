@@ -4,14 +4,14 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-
 import Typography from "@mui/material/Typography";
-
 import Button from "@mui/material/Button";
 import { Drawer, useMediaQuery, useTheme } from "@mui/material";
 import DrawerComp from "../DrawerComp/DrawerComp";
 import afubot from "../../public/AFUbot.svg";
 import Image from "next/image";
+
+import Link from "next/link";
 
 const pages = ["Home", "About", "Team", "Contact"];
 
@@ -44,7 +44,9 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <Button key={page} sx={{ color: "white" }}>
-                  <a href="">{page}</a>
+                  <Link href={page === "Home" ? `/` : `/${page.toLowerCase()}`}>
+                    {page}
+                  </Link>
                 </Button>
               ))}
             </Box>

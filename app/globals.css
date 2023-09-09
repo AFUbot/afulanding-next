@@ -8,6 +8,7 @@ html,
 body {
   color: white;
   overflow-x: clip;
+  scroll-behavior: smooth;
 }
 
 a {

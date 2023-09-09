@@ -13,7 +13,7 @@ const Team = () => {
         container
         alignItems="center"
         justifyContent="center"
-        sx={{ width: "100%", marginTop: '2em', padding: 10, gap: 7 }}
+        sx={{ width: "100%", marginTop: "2em", padding: 10, gap: 7 }}
       >
         {teamData().map((member) => (
           <Grid item>
