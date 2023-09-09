@@ -7,14 +7,17 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
-      <Hero></Hero>
-      <Container maxWidth="xl" sx={{ padding: 3 }}>
+      <Container
+        maxWidth="xl"
+        sx={{
+          padding: 3,
+        }}
+      >
+        <Hero></Hero>
         <About></About>
         <RobotCanvas></RobotCanvas>
         <HowItWorks></HowItWorks>
       </Container>
-    </div>
   );
 };
 
