@@ -23,12 +23,14 @@ const TeamMember = (props) => {
         }}
       >
         <CardMedia sx={{ height: 350 }} image={props.imgUrl} title="" />
-        <Box sx={{padding: 1, border: 0.5, borderColor: 'white', borderTop: 0,}}>
+        <Box
+          sx={{ padding: 1, border: 0.5, borderColor: "white", borderTop: 0 }}
+        >
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {props.name}
             </Typography>
-            <Typography variant="body2" color="grey" sx={{height: 30}}>
+            <Typography variant="body2" color="grey" sx={{ height: 30 }}>
               {props.designation}
             </Typography>
           </CardContent>

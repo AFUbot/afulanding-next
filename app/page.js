@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Hero></Hero>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{ padding: 3 }}>
         <About></About>
         <RobotCanvas></RobotCanvas>
         <HowItWorks></HowItWorks>
