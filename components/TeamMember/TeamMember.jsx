@@ -1,28 +1,46 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import { Facebook, Instagram, MapsHomeWork } from "@mui/icons-material";
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
-const TeamMember = () => {
+const TeamMember = (props) => {
   return (
     <div>
-      <Card sx={{ maxWidth: 345 }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Share</Button>
-          <Button size="small">Learn More</Button>
-        </CardActions>
+      <Card
+        sx={{
+          width: 350,
+          background: "black",
+          color: "white",
+          borderRadius: 5,
+        }}
+      >
+        <CardMedia sx={{ height: 350 }} image={props.imgUrl} title="" />
+        <Box sx={{padding: 1, border: 0.5, borderColor: 'white', borderTop: 0,}}>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {props.name}
+            </Typography>
+            <Typography variant="body2" color="grey" sx={{height: 30}}>
+              {props.designation}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <IconButton aria-label="facebook">
+              <Facebook sx={{ color: "white" }} />
+            </IconButton>
+            <IconButton aria-label="instagram">
+              <Instagram sx={{ color: "white" }} />
+            </IconButton>
+          </CardActions>
+        </Box>
       </Card>
     </div>
   );
