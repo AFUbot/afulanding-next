@@ -49,7 +49,7 @@ const Footer = () => {
           href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}
+          style={{ margin: "0 1rem", color: "#01AFEA", textDecoration: "none" }}
         >
           <FacebookIcon color="#01AFEA" fontSize="large" />
         </a>
@@ -57,7 +57,7 @@ const Footer = () => {
           href="https://www.github.com"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}
+          style={{ margin: "0 1rem", color: "#01AFEA", textDecoration: "none" }}
         >
           <GitHubIcon color="#01AFEA" fontSize="large" />
         </a>
@@ -65,9 +65,9 @@ const Footer = () => {
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}
+          style={{ margin: "0 1rem", color: "#01AFEA", textDecoration: "none" }}
         >
-          <InstagramIcon color="#01AFEA" fontSize="large" />
+          <InstagramIcon fontSize="large" />
         </a>
       </div>
       <hr style={{ border: "1px solid #333", margin: "1rem 0" }} />
