@@ -13,7 +13,7 @@ const teamData = () => {
         {
             name: "Zuhayer Siddique",
             designation: "Dev Team",
-            imgUrl: "",
+            imgUrl: "./team/Zuhayer.jpg",
         },
         {
             name: "Malik Araf",
