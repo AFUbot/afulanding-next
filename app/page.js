@@ -4,16 +4,24 @@ import HowItWorks from "@/components/HowItWorks/howitworks";
 import RobotCanvas from "@/components/Robot";
 import { Container } from "@mui/material";
 import React from "react";
+import PageWrapper from "./pageWrapper";
+import AnimeWrapper from "./animeWrapper";
 
 const Home = () => {
   return (
     <div>
-      <Hero></Hero>
-      <Container maxWidth="xl" sx={{ padding: 3 }}>
-        <About></About>
-        <RobotCanvas></RobotCanvas>
-        <HowItWorks></HowItWorks>
-      </Container>
+      <PageWrapper>
+        <Hero></Hero>
+        <Container maxWidth="xl" sx={{ padding: 3 }}>
+          <AnimeWrapper>
+            <About></About>
+          </AnimeWrapper>
+          <RobotCanvas></RobotCanvas>
+          <AnimeWrapper>
+            <HowItWorks></HowItWorks>
+          </AnimeWrapper>
+        </Container>
+      </PageWrapper>
     </div>
   );
 };
