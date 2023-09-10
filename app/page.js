@@ -9,6 +9,7 @@ import AnimeWrapper from "./animeWrapper";
 
 const Home = () => {
   return (
+<<<<<<< HEAD
     <div>
       <PageWrapper>
         <Hero></Hero>
@@ -23,6 +24,19 @@ const Home = () => {
         </Container>
       </PageWrapper>
     </div>
+=======
+      <Container
+        maxWidth="xl"
+        sx={{
+          padding: 3,
+        }}
+      >
+        <Hero></Hero>
+        <About></About>
+        <RobotCanvas></RobotCanvas>
+        <HowItWorks></HowItWorks>
+      </Container>
+>>>>>>> b4270d2e95c0228e9765fecf114259e175b6b5a6
   );
 };
 
