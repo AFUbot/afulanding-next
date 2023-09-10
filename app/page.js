@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <PageWrapper>
         <Hero></Hero>
-        <Container maxWidth="xl" sx={{ padding: 3 }}>
+        <Container maxWidth="lg" sx={{ padding: 3 }}>
           <AnimeWrapper>
             <About></About>
           </AnimeWrapper>

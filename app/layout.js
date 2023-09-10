@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div>
           <Navbar></Navbar>
-
           {children}
           <StarsCanvas></StarsCanvas>
           <Footer></Footer>

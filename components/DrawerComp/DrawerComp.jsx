@@ -11,20 +11,33 @@ import {
   ListItemText,
   colors,
 } from "@mui/material";
+import Link from "next/link";
 
 const pages = ["Home", "About", "Team", "Contact"];
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <React.Fragment>
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+      <Drawer
+        PaperProps={{
+          sx: { width: "50%", background: "black" },
+        }}
+        open={openDrawer}
+        onClose={() => setOpenDrawer(false)}
+      >
         <List>
           {pages.map((page, index) => (
-            <ListItemButton key={index}>
-              <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
-              </ListItemIcon>
-            </ListItemButton>
+            <Link
+              key={index}
+              href={page === "Home" ? `/` : `/${page.toLowerCase()}`}
+              onClick={() => setOpenDrawer(!openDrawer)}
+            >
+              <ListItemButton>
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>{page}</ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+            </Link>
           ))}
         </List>
       </Drawer>

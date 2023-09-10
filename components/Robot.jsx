@@ -26,7 +26,7 @@ const Earth = () => {
 
 const RobotCanvas = () => {
   return (
-    <Box sx={{ height: "100vh" }}>
+    <Box sx={{ height: "100vh", cursor: "grab" }}>
       <Canvas
         shadows
         frameloop="demand"

@@ -17,7 +17,7 @@ const About = () => {
           <Typography variant="h3" fontWeight="bold">
             Overview
           </Typography>
-          <Typography fontSize={24} mt={3}>
+          <Typography fontSize="1.4em" mt={3}>
             AFUBot, a breakthrough food delivery project from the minds of
             students from University of Technology Malaysia, is redefining
             convenience. Developed by a passionate team of UTM students, we
