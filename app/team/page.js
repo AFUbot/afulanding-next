@@ -10,7 +10,7 @@ const Team = () => {
       <PageWrapper>
         <Container maxWidth="lg">
           <Typography variant="h4" fontWeight="bold" align="center">
-            Meet the Team
+            Meet the Team 
           </Typography>
           <Grid
             container
