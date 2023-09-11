@@ -16,13 +16,13 @@ const TeamMember = (props) => {
     <div>
       <Card
         sx={{
-          width: 250,
+          width: 350,
           background: "black",
           color: "white",
           borderRadius: 5,
         }}
       >
-        <CardMedia sx={{ height: 250 }} image={props.imgUrl} title="" />
+        <CardMedia sx={{ height: 350 }} image={props.imgUrl} title="" />
         <Box
           sx={{ padding: 1, border: 0.5, borderColor: "white", borderTop: 0 }}
         >

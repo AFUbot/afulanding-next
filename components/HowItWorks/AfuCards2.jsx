@@ -41,7 +41,7 @@ const AfuCard2 = () => {
             />
           }
           desc="Delivery"
-          content="AFUBot ensures contactless delivery to the customer's doorstep."
+          content="AFUbot ensures contactless delivery to the customer's doorstep."
         />
       </Grid>
     </Grid>

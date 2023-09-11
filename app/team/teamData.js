@@ -2,27 +2,27 @@ const teamData = () => {
   const teamData = [
     {
       name: "Najmul Islam",
-      designation: "Founder & Mechanical and System Development",
+      designation: "Mechanical and System Development",
       imgUrl: "./team/Najmul.jpeg",
     },
     {
       name: "Tahzeeb Rahman",
-      designation: "Dev Team",
+      designation: "Dev Team and Robot Programming",
       imgUrl: "./team/Ishmum.jpg",
     },
     {
       name: "Zuhayer Siddique",
-      designation: "Dev Team",
+      designation: "Dev Team and Robot Programming",
       imgUrl: "./team/Zuhayer.jpg",
     },
     {
       name: "Malik Araf",
-      designation: "Dev Team",
+      designation: "Robot Programming",
       imgUrl: "./team/Araf.jpeg",
     },
     {
       name: "Abrar Hussain",
-      designation: "Dev Team",
+      designation: "Robot Programming",
       imgUrl: "./team/Abrar.png",
     },
     {

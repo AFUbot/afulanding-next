@@ -7,7 +7,7 @@ import Footer from "../components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AFUbot - Landing",
+  title: "AFUbot",
   description: "AFUbot - An autonomous solution for Urban Food Delivery",
 };
 
