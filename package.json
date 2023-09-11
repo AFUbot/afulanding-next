@@ -17,7 +17,6 @@
     "@netlify/plugin-nextjs": "^4.40.1",
     "@react-three/drei": "^9.83.1",
     "@react-three/fiber": "^8.14.1",
-    "find-cache-dir": "^5.0.0",
     "framer-motion": "^10.16.4",
     "maath": "^0.7.0",
     "next": "13.4.19",
