@@ -10,8 +10,8 @@ import CanvasLoader from "./Loader";
 import { Box, Typography } from "@mui/material";
 
 const Robot = () => {
-  // const robot = useGLTF("./planet/scene.gltf");
-  const robot = useGLTF("./whale/scene.gltf");
+  const robot = useGLTF("./planet/scene.gltf");
+  // const robot = useGLTF("./whale/scene.gltf");
   // const robot = useGLTF("./lowres/untitled.gltf");
 
   return (
@@ -53,7 +53,7 @@ const RobotCanvas = () => {
             intensity={3} // Adjust the intensity as needed
             castShadow={true} // Enable shadows
           />
-          <directionalLight
+          {/* <directionalLight
             position={[0, 15, 0]} // You can adjust the position of the light
             intensity={3} // Adjust the intensity as needed
             castShadow={true} // Enable shadows
@@ -62,7 +62,7 @@ const RobotCanvas = () => {
             position={[10, 10, 0]} // You can adjust the position of the light
             intensity={5} // Adjust the intensity as needed
             castShadow={true} // Enable shadows
-          />
+          /> */}
           <Robot />
           <Preload all />
         </Suspense>
