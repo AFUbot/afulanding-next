@@ -9,7 +9,7 @@ import { Mesh, Color } from "three";
 import CanvasLoader from "./Loader";
 import { Box, Typography } from "@mui/material";
 
-const Robot = () => {
+const Earth = () => {
   // const robot = useGLTF("./planet/scene.gltf");
   const robot = useGLTF("./whale/scene.gltf");
   // const robot = useGLTF("./lowres/untitled.gltf");
@@ -63,7 +63,7 @@ const RobotCanvas = () => {
             intensity={5} // Adjust the intensity as needed
             castShadow={true} // Enable shadows
           />
-          <Robot />
+          <Earth />
           <Preload all />
         </Suspense>
       </Canvas>
