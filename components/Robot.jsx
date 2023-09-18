@@ -10,15 +10,14 @@ import CanvasLoader from "./Loader";
 import { Box, Typography } from "@mui/material";
 
 const Earth = () => {
-  // const robot = useGLTF("./planet/scene.gltf");
-  // const robot = useGLTF("./whale/scene.gltf");
-  const robot = useGLTF("./robot/untitled.gltf");
+  // const robot = useGLTF("./robot/untitled.gltf");
+  const robot = useGLTF("./lowres3/untitled.gltf");
 
   return (
     <primitive
       style={{ background: "grey", minHeight: "100vh" }}
       object={robot.scene}
-      scale={0.35}
+      scale={3}
       position-y={0}
       rotation-y={0}
     />
@@ -28,7 +27,7 @@ const Earth = () => {
 const RobotCanvas = () => {
   return (
     <Box sx={{ height: "100vh", cursor: "grab" }}>
-      <Typography textAlign="center" variant="h5">
+      <Typography textAlign="center" variant="h5" mt={5}>
         Introducing
       </Typography>
       <Typography
@@ -55,17 +54,21 @@ const RobotCanvas = () => {
           <OrbitControls
             autoRotate
             enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
+            maxPolarAngle={Math.PI}
             enablePan={false}
-            minPolarAngle={Math.PI / 2}
+            minPolarAngle={0}
           />
+          {/* Ambient Light */}
+          <ambientLight intensity={0.5} />
+
+          {/* Three directional lights */}
           <directionalLight
-            position={[10, 0, 0]}
-            intensity={3}
+            position={[10, 10, 10]}
+            intensity={1}
             castShadow={true}
           />
-          <directionalLight position={[0, 15, 0]} intensity={3} />
-          <directionalLight position={[0, 0, 15]} intensity={3} />
+          <directionalLight position={[-10, -10, -10]} intensity={0.5} />
+          <directionalLight position={[0, 0, 10]} intensity={0.5} />
           <Earth />
           <Preload all />
         </Suspense>
