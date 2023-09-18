@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,10 +12,12 @@ import afubot from "../../public/AFUbot.svg";
 import Image from "next/image";
 
 import Link from "next/link";
-
-const pages = ["Home", "About", "Team", "Contact"];
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const pathname = usePathname();
+  console.log(pathname);
+
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   return (
@@ -25,14 +27,8 @@ function Navbar() {
       sx={{ background: "rgba(0, 0, 0, 0.5)" }}
     >
       <Toolbar>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          {/* Your logo image */}
-        </Box>
-        <Image
-          src={afubot} // Replace with the actual path to your logo image
-          alt="AFUBotLogo"
-          style={{ maxWidth: "8rem" }} // You can adjust the width as needed
-        />
+        <Box sx={{ display: "flex", alignItems: "center" }}></Box>
+        <Image src={afubot} alt="AFUBotLogo" style={{ maxWidth: "8rem" }} />
         {isMatch ? (
           <>
             <DrawerComp />
@@ -42,13 +38,46 @@ function Navbar() {
             <Box
               sx={{ display: "flex", justifyContent: "flex-end", flexGrow: 1 }}
             >
-              {pages.map((page) => (
-                <Button key={page} sx={{ color: "white" }}>
-                  <Link href={page === "Home" ? `/` : `/${page.toLowerCase()}`}>
-                    {page}
-                  </Link>
+              <Link href={`/`}>
+                <Button
+                  className={
+                    pathname === "/" ? "navbuttonselected" : "navbutton"
+                  }
+                  sx={{ color: "white" }}
+                >
+                  Home
                 </Button>
-              ))}
+              </Link>
+              <Link href={`/timeline`}>
+                <Button
+                  className={
+                    pathname === "/timeline" ? "navbuttonselected" : "navbutton"
+                  }
+                  sx={{ color: "white" }}
+                >
+                  Timeline
+                </Button>
+              </Link>
+              <Link href={`/team`}>
+                <Button
+                  className={
+                    pathname === "/team" ? "navbuttonselected" : "navbutton"
+                  }
+                  sx={{ color: "white" }}
+                >
+                  Team
+                </Button>
+              </Link>
+              <Link href={`/`}>
+                <Button
+                  className={
+                    pathname === "/contact" ? "navbuttonselected" : "navbutton"
+                  }
+                  sx={{ color: "white" }}
+                >
+                  Contact
+                </Button>
+              </Link>
             </Box>
           </>
         )}

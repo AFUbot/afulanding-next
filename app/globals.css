@@ -23,6 +23,19 @@ a:hover {
   transition-duration: 0.3s;
 }
 
+.navbutton {
+  color: white;
+  text-decoration: none;
+}
+.navbutton:hover {
+  color: #05acea;
+  transition-duration: 0.3s;
+}
+.navbuttonselected {
+  color: #05acea;
+  font-weight: bold;
+}
+
 /* .bottom {
   width: 100%;
   height: 25vh;

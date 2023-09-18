@@ -12,7 +12,7 @@ import { Box, Typography } from "@mui/material";
 const Earth = () => {
   // const robot = useGLTF("./planet/scene.gltf");
   // const robot = useGLTF("./whale/scene.gltf");
-  const robot = useGLTF("./robot2/untitled.gltf");
+  const robot = useGLTF("./robot/untitled.gltf");
 
   return (
     <primitive
@@ -49,14 +49,17 @@ const RobotCanvas = () => {
             minPolarAngle={Math.PI / 2}
           />
           <directionalLight
-            position={[5, 15, 1]} // You can adjust the position of the light
-            intensity={5} // Adjust the intensity as needed
+            position={[10, 0, 0]} // You can adjust the position of the light
+            intensity={3} // Adjust the intensity as needed
             castShadow={true} // Enable shadows
           />
           <directionalLight
-            position={[5, 15, 20]} // You can adjust the position of the light
-            intensity={5} // Adjust the intensity as needed
-            castShadow={true} // Enable shadows
+            position={[0, 15, 0]} // You can adjust the position of the light
+            intensity={3} // Adjust the intensity as needed
+          />
+          <directionalLight
+            position={[0, 0, 15]} // You can adjust the position of the light
+            intensity={3} // Adjust the intensity as needed
           />
           <Earth />
           <Preload all />
