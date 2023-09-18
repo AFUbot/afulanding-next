@@ -9,12 +9,14 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Button,
   colors,
 } from "@mui/material";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-const pages = ["Home", "About", "Team", "Contact"];
 const DrawerComp = () => {
+  const pathname = usePathname();
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <React.Fragment>
@@ -26,19 +28,48 @@ const DrawerComp = () => {
         onClose={() => setOpenDrawer(false)}
       >
         <List>
-          {pages.map((page, index) => (
-            <Link
-              key={index}
-              href={page === "Home" ? `/` : `/${page.toLowerCase()}`}
+          <Link href={`/`}>
+            <Button
+              className={pathname === "/" ? "navbuttonselected" : "navbutton"}
+              sx={{ color: "white", width: "100%" }}
               onClick={() => setOpenDrawer(!openDrawer)}
             >
-              <ListItemButton>
-                <ListItemIcon>
-                  <ListItemText sx={{ color: "white" }}>{page}</ListItemText>
-                </ListItemIcon>
-              </ListItemButton>
-            </Link>
-          ))}
+              Home
+            </Button>
+          </Link>
+          <Link href={`/timeline`}>
+            <Button
+              className={
+                pathname === "/timeline" ? "navbuttonselected" : "navbutton"
+              }
+              sx={{ color: "white", width: "100%" }}
+              onClick={() => setOpenDrawer(!openDrawer)}
+            >
+              Timeline
+            </Button>
+          </Link>
+          <Link href={`/team`}>
+            <Button
+              className={
+                pathname === "/team" ? "navbuttonselected" : "navbutton"
+              }
+              sx={{ color: "white", width: "100%" }}
+              onClick={() => setOpenDrawer(!openDrawer)}
+            >
+              Team
+            </Button>
+          </Link>
+          <Link href={`/`}>
+            <Button
+              className={
+                pathname === "/contact" ? "navbuttonselected" : "navbutton"
+              }
+              sx={{ color: "white", width: "100%" }}
+              onClick={() => setOpenDrawer(!openDrawer)}
+            >
+              Contact
+            </Button>
+          </Link>
         </List>
       </Drawer>
       <IconButton

@@ -14,13 +14,7 @@ const Earth = () => {
   const robot = useGLTF("./lowres3/untitled.gltf");
 
   return (
-    <primitive
-      style={{ background: "grey", minHeight: "100vh" }}
-      object={robot.scene}
-      scale={3}
-      position-y={0}
-      rotation-y={0}
-    />
+    <primitive object={robot.scene} scale={3} position-y={0} rotation-y={0} />
   );
 };
 
