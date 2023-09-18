@@ -21,7 +21,7 @@ const About = () => {
             AFUbot, a breakthrough food delivery project from the minds of
             students from University of Technology Malaysia, is redefining
             convenience. Developed by a passionate team of UTM students, we
-            blend technology with everyday needs. AFUBot integrates robotics and
+            blend technology with everyday needs. AFUbot integrates robotics and
             AI, shaping a smarter, greener delivery future. Join us in
             revolutionizing food delivery.
           </Typography>

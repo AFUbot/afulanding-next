@@ -71,7 +71,7 @@ const Footer = () => {
         </a>
       </div>
       <hr style={{ border: "1px solid #333", margin: "1rem 0" }} />
-      <p style={{ fontSize: "0.9rem" }}>AFUBot© {new Date().getFullYear()}</p>
+      <p style={{ fontSize: "0.9rem" }}>AFUbot© {new Date().getFullYear()}</p>
     </footer>
   );
 };

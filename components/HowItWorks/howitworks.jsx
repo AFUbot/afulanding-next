@@ -21,7 +21,7 @@ const HowItWorks = () => {
           <iframe
             width="100%"
             height="480"
-            src={`https://www.youtube.com/embed/dX3k_QDnzHE?si=COAZ-6giO-BWNq4B`}
+            src={`https://www.youtube.com/embed/A4pcKSKxjb4?si=fcGX8Bf2y5PHNZPy`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Embedded youtube"

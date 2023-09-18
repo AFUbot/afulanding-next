@@ -28,6 +28,17 @@ const Earth = () => {
 const RobotCanvas = () => {
   return (
     <Box sx={{ height: "100vh", cursor: "grab" }}>
+      <Typography textAlign="center" variant="h5">
+        Introducing
+      </Typography>
+      <Typography
+        color="#05ACEA"
+        textAlign="center"
+        variant="h3"
+        fontWeight="bold"
+      >
+        The AJ20 Model
+      </Typography>
       <Canvas
         shadows
         frameloop="demand"
@@ -49,18 +60,12 @@ const RobotCanvas = () => {
             minPolarAngle={Math.PI / 2}
           />
           <directionalLight
-            position={[10, 0, 0]} // You can adjust the position of the light
-            intensity={3} // Adjust the intensity as needed
-            castShadow={true} // Enable shadows
+            position={[10, 0, 0]}
+            intensity={3}
+            castShadow={true}
           />
-          <directionalLight
-            position={[0, 15, 0]} // You can adjust the position of the light
-            intensity={3} // Adjust the intensity as needed
-          />
-          <directionalLight
-            position={[0, 0, 15]} // You can adjust the position of the light
-            intensity={3} // Adjust the intensity as needed
-          />
+          <directionalLight position={[0, 15, 0]} intensity={3} />
+          <directionalLight position={[0, 0, 15]} intensity={3} />
           <Earth />
           <Preload all />
         </Suspense>
