@@ -13,8 +13,8 @@ import CodeTwoToneIcon from "@mui/icons-material/CodeTwoTone";
 
 import Image from "next/image";
 
-import devphase1 from "/public/timeline/devphase1.jpg";
-import sdphase1 from "/public/timeline/sdphase1.jpg";
+import devphase1 from "../../public/timeline/devphase1.jpg";
+import sdphase1 from "../../public/timeline/sdphase1.jpg";
 
 const Timeline = () => {
   return (
@@ -45,7 +45,7 @@ const Timeline = () => {
           </h5>
           <div>
             <Image
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto" }}
               src={sdphase1}
             ></Image>
           </div>
@@ -71,7 +71,7 @@ const Timeline = () => {
           </h5>
           <div>
             <Image
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto" }}
               src={devphase1}
             ></Image>
           </div>
