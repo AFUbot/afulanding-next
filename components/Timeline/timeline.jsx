@@ -44,10 +44,10 @@ const Timeline = () => {
             Robot System Design and Model
           </h5>
           <div>
-            <Image
+            {/* <Image
               style={{ width: "100%", height: "auto" }}
               src={sdphase1}
-            ></Image>
+            ></Image> */}
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
