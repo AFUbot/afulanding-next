@@ -48,7 +48,7 @@ const Team = () => {
             }}
           >
             {teamData().map((member) => {
-              if (member.designation == "Mechanical and System Development") {
+              if (member.designation == "Mechanical and System Desgin") {
                 return (
                   <TeamMember
                     name={member.name}
@@ -72,7 +72,7 @@ const Team = () => {
             }}
           >
             {teamData().map((member) => {
-              if (member.designation.includes("Robot Programming")) {
+              if (member.designation.includes("Robot Programming") || member.designation.includes("Dev Team")) {
                 return (
                   <TeamMember
                     name={member.name}
