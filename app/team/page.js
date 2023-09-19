@@ -6,21 +6,19 @@ import PageWrapper from "../pageWrapper";
 
 const Team = () => {
   return (
-    <Box>
+    <Box >
       <PageWrapper>
-        <Container maxWidth="lg" sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <Container maxWidth="lg" sx={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <Typography variant="h4" fontWeight="bold" align="center">
             Meet the Team
           </Typography>
-          <Container
-            // alignItems="center"
-            // justifyContent="center"
+          <Box
             sx={{
               width: "100%",
               marginTop: "2em",
               padding: 10,
-              gap: 7,
               display: "flex",
+              gap: 7,
               justifyContent: "center",
               overflowX: "auto",
             }}
@@ -36,18 +34,16 @@ const Team = () => {
                 );
               }
             })}
-          </Container>
+          </Box>
           
           {/* Mecha and SD Team */}
-          <Container
-            alignItems="center"
-            justifyContent="center"
+          <Box
             sx={{
               width: "100%",
               marginTop: "2em",
               padding: 10,
-              gap: 7,
               display: "flex",
+              gap: 7,
               overflowX: "auto",
             }}
           >
@@ -62,18 +58,16 @@ const Team = () => {
                 );
               }
             })}
-          </Container>
+          </Box>
           
           {/* Dev or Robot Prog Team */}
-          <Container
-            alignItems="center"
-            justifyContent="center"
+          <Box
             sx={{
               width: "100%",
               marginTop: "2em",
               padding: 10,
-              gap: 7,
               display: "flex",
+              gap: 7,
               overflowX: "auto",
             }}
           >
@@ -88,7 +82,7 @@ const Team = () => {
                 );
               }
             })}
-          </Container>
+          </Box>
         </Container>
       </PageWrapper>
     </Box>
