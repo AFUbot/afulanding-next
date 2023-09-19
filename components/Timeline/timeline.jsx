@@ -14,7 +14,7 @@ import CodeTwoToneIcon from "@mui/icons-material/CodeTwoTone";
 import Image from "next/image";
 
 import devphase1 from "../../public/timeline/devphase1.jpg";
-import sdphase1 from "../../public/timeline/sdphase1.jpg";
+// import sdphase1 from "../../public/timeline/sdphase1.jpg";
 
 const Timeline = () => {
   return (
