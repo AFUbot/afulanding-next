@@ -26,7 +26,7 @@ const About = () => {
             revolutionizing food delivery.
           </Typography>
         </Grid>
-        <Grid item md={12} lg={6}>
+        <Grid minHeight="100vh" item md={12} lg={6}>
           <Cards></Cards>
         </Grid>
       </Grid>

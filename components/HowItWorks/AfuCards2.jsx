@@ -21,7 +21,7 @@ const AfuCard2 = () => {
         <CardItem2
           icon={<FastfoodIcon sx={{ color: "#01AFEA", fontSize: 80 }} />}
           desc="Food Pickup"
-          content="AFUBot collects the food from the restaurant."
+          content="AFUbot collects the food from the restaurant."
         />
       </Grid>
       <Grid item xs={6}>
@@ -30,7 +30,7 @@ const AfuCard2 = () => {
             <NavigationOutlinedIcon sx={{ color: "#01AFEA", fontSize: 80 }} />
           }
           desc="Navigation"
-          content="Robot navigates through streets and reaches the destination."
+          content="AFUbot navigates through streets and reaches the destination."
         />
       </Grid>
       <Grid item xs={6}>

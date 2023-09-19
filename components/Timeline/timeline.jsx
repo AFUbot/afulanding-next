@@ -22,15 +22,25 @@ const Timeline = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "white", color: "black" }}
+          contentStyle={{
+            background: "white",
+            color: "white",
+          }}
+          date="Present"
           contentArrowStyle={{ borderRight: "7px solid  white" }}
           iconStyle={{ background: "white", color: "black" }}
           icon={<SettingsSuggestTwoToneIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
+          <h3
+            style={{ color: "black", margin: "3px" }}
+            className="vertical-timeline-element-title"
+          >
             System Design Team
           </h3>
-          <h5 className="vertical-timeline-element-subtitle">
+          <h5
+            style={{ color: "grey", margin: "3px" }}
+            className="vertical-timeline-element-subtitle"
+          >
             Robot System Design and Model
           </h5>
           <div>
@@ -47,8 +57,16 @@ const Timeline = () => {
           iconStyle={{ background: "white", color: "black" }}
           icon={<CodeTwoToneIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Development Team</h3>
-          <h5 className="vertical-timeline-element-subtitle">
+          <h3
+            style={{ color: "black", margin: "3px" }}
+            className="vertical-timeline-element-title"
+          >
+            Development Team
+          </h3>
+          <h5
+            style={{ color: "grey", margin: "3px" }}
+            className="vertical-timeline-element-subtitle"
+          >
             Control Panel Implementation
           </h5>
           <div>
@@ -62,7 +80,7 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#05ACEA", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #05ACEA" }}
-          date="Aug, 2023 - present"
+          date="August 2023"
           iconStyle={{ background: "#05ACEA", color: "#fff" }}
           icon={<LooksOneTwoToneIcon />}
         >

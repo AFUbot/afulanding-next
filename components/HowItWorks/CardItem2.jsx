@@ -45,7 +45,7 @@ const CardItem = (props) => {
             }}
           >
             <Grid item xs={6} md={8}>
-              <Typography fontSize={18} fontWeight="bold">
+              <Typography fontSize="1em" fontWeight="bold">
                 {props.desc}
               </Typography>
             </Grid>
@@ -53,7 +53,7 @@ const CardItem = (props) => {
               {props.icon}
             </Grid>
             <Grid item xs={12}>
-              <Typography fontSize={18} textAlign="left">
+              <Typography fontSize="1em" textAlign="left">
                 {props.content}
               </Typography>
             </Grid>

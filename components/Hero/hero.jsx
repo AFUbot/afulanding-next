@@ -24,7 +24,7 @@ const Hero = () => {
           >
             <Image style={{ height: 60 }} src={Logo}></Image>
 
-            <Box sx={{ mt: 3 }}>
+            {/* <Box sx={{ mt: 3 }}>
               <AfuButton
                 sx={{ marginTop: 3, marginRight: 2 }}
                 bgColor="#05ACEA"
@@ -37,7 +37,7 @@ const Hero = () => {
                 name="GitHub"
                 textColor="white"
               ></AfuButton>
-            </Box>
+            </Box> */}
             <Box
               sx={{
                 display: { xs: "none", md: "block" },
