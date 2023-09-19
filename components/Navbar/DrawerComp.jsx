@@ -59,7 +59,7 @@ const DrawerComp = () => {
               Team
             </Button>
           </Link>
-          <Link href={`/`}>
+          <Link href={`mailto:afubot.dev@gmail.com`}>
             <Button
               className={
                 pathname === "/contact" ? "navbuttonselected" : "navbutton"
