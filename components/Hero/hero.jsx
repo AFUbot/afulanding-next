@@ -19,7 +19,7 @@ const Hero = () => {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              mt: "-50px",
+              mt: "-60px",
             }}
           >
             <Image style={{ height: 60 }} src={Logo}></Image>
