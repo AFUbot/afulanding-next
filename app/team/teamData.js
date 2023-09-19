@@ -2,7 +2,7 @@ const teamData = () => {
   const teamData = [
     {
       name: "Najmul Islam",
-      designation: "Mechanical and System Development",
+      designation: "Mechanical and System Design",
       imgUrl: "./team/Najmul.jpeg",
     },
     {
@@ -32,17 +32,17 @@ const teamData = () => {
     },
     {
       name: "Shaheed Junaid",
-      designation: "Mechanical and System Development",
+      designation: "Mechanical and System Design",
       imgUrl: "./team/Junaid.jpg",
     },
     {
       name: "Fahad Tanvir",
-      designation: "Mechanical and System Development",
+      designation: "Mechanical and System Design",
       imgUrl: "",
     },
     {
       name: "Samiur",
-      designation: "Mechanical and System Development",
+      designation: "Mechanical and System Design",
       imgUrl: "",
     },
     {
