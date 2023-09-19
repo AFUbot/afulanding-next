@@ -12,7 +12,7 @@ const TimelinePage = () => {
         mt: "50px",
       }}
     >
-      <Timeline></Timeline>
+      <Timeline img1={`/timeline/devphase1.jpg`}></Timeline>
     </Box>
   );
 };
