@@ -48,7 +48,7 @@ const Team = () => {
             }}
           >
             {teamData().map((member) => {
-              if (member.designation == "Mechanical and System Desgin") {
+              if (member.designation == "Mechanical and System Design") {
                 return (
                   <TeamMember
                     name={member.name}
