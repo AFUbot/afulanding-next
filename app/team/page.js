@@ -6,28 +6,83 @@ import PageWrapper from "../pageWrapper";
 
 const Team = () => {
   return (
-    <Box>
+    <Box >
       <PageWrapper>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <Typography variant="h4" fontWeight="bold" align="center">
-            Meet the Team 
+            Meet the Team
           </Typography>
-          <Grid
-            container
-            alignItems="center"
-            justifyContent="center"
-            sx={{ width: "100%", marginTop: "2em", padding: 10, gap: 7 }}
+          <Box
+            sx={{
+              width: "100%",
+              marginTop: "2em",
+              padding: 10,
+              display: "flex",
+              gap: 7,
+              justifyContent: "center",
+              overflowX: "auto",
+            }}
           >
-            {teamData().map((member) => (
-              <Grid item>
-                <TeamMember
-                  name={member.name}
-                  designation={member.designation}
-                  imgUrl={member.imgUrl}
-                />
-              </Grid>
-            ))}
-          </Grid>
+            {teamData().map((member) => {
+              if (member.designation == "Technical Advisor") {
+                return (
+                  <TeamMember
+                    name={member.name}
+                    designation={member.designation}
+                    imgUrl={member.imgUrl}
+                  />
+                );
+              }
+            })}
+          </Box>
+          
+          {/* Mecha and SD Team */}
+          <Box
+            sx={{
+              width: "100%",
+              marginTop: "2em",
+              padding: 10,
+              display: "flex",
+              gap: 7,
+              overflowX: "auto",
+            }}
+          >
+            {teamData().map((member) => {
+              if (member.designation == "Mechanical and System Development") {
+                return (
+                  <TeamMember
+                    name={member.name}
+                    designation={member.designation}
+                    imgUrl={member.imgUrl}
+                  />
+                );
+              }
+            })}
+          </Box>
+          
+          {/* Dev or Robot Prog Team */}
+          <Box
+            sx={{
+              width: "100%",
+              marginTop: "2em",
+              padding: 10,
+              display: "flex",
+              gap: 7,
+              overflowX: "auto",
+            }}
+          >
+            {teamData().map((member) => {
+              if (member.designation.includes("Robot Programming")) {
+                return (
+                  <TeamMember
+                    name={member.name}
+                    designation={member.designation}
+                    imgUrl={member.imgUrl}
+                  />
+                );
+              }
+            })}
+          </Box>
         </Container>
       </PageWrapper>
     </Box>
