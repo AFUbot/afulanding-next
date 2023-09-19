@@ -14,7 +14,7 @@ import CodeTwoToneIcon from "@mui/icons-material/CodeTwoTone";
 import Image from "next/image";
 
 import devphase1 from "../../public/timeline/devphase1.jpg";
-// import sdphase1 from "../../public/timeline/sdphase1.jpg";
+import sdphase1 from "../../public/timeline/sysdesign1.JPG";
 
 const Timeline = () => {
   return (
@@ -44,10 +44,10 @@ const Timeline = () => {
             Robot System Design and Model
           </h5>
           <div>
-            {/* <Image
+            <Image
               style={{ width: "100%", height: "auto" }}
               src={sdphase1}
-            ></Image> */}
+            ></Image>
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
