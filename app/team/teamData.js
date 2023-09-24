@@ -1,10 +1,10 @@
 const teamData = () => {
   const teamData = [
-    {
-      name: "Najmul Islam",
-      designation: "Mechanical and System Design",
-      imgUrl: "./team/Najmul.jpeg",
-    },
+    // {
+    //   name: "Najmul Islam",
+    //   designation: "Mechanical and System Design",
+    //   imgUrl: "./team/Najmul.jpeg",
+    // },
     {
       name: "Tahzeeb Rahman",
       designation: "Dev Team and Robot Programming",
@@ -20,16 +20,16 @@ const teamData = () => {
       designation: "Robot Programming",
       imgUrl: "./team/Araf.jpeg",
     },
-    {
-      name: "Abrar Hussain",
-      designation: "Robot Programming",
-      imgUrl: "./team/Abrar.png",
-    },
-    {
-      name: "Ruzhan Islam",
-      designation: "Dev Team",
-      imgUrl: "./team/Ruzhan.jpg",
-    },
+    // {
+    //   name: "Abrar Hussain",
+    //   designation: "Robot Programming",
+    //   imgUrl: "./team/Abrar.png",
+    // },
+    // {
+    //   name: "Ruzhan Islam",
+    //   designation: "Dev Team",
+    //   imgUrl: "./team/Ruzhan.jpg",
+    // },
     {
       name: "Shaheed Junaid",
       designation: "Mechanical and System Design",
