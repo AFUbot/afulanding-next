@@ -40,7 +40,6 @@ const Team = () => {
           <Box
             sx={{
               width: "100%",
-              marginTop: "2em",
               padding: 10,
               display: "flex",
               gap: 7,
@@ -64,7 +63,6 @@ const Team = () => {
           <Box
             sx={{
               width: "100%",
-              marginTop: "2em",
               padding: 10,
               display: "flex",
               gap: 7,
