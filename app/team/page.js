@@ -6,9 +6,17 @@ import PageWrapper from "../pageWrapper";
 
 const Team = () => {
   return (
-    <Box >
+    <Box>
       <PageWrapper>
-        <Container maxWidth="lg" sx={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <Container
+          maxWidth="lg"
+          sx={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           <Typography variant="h4" fontWeight="bold" align="center">
             Meet the Team
           </Typography>
@@ -35,7 +43,7 @@ const Team = () => {
               }
             })}
           </Box>
-          
+
           {/* Mecha and SD Team */}
           <Box
             sx={{
@@ -58,7 +66,7 @@ const Team = () => {
               }
             })}
           </Box>
-          
+
           {/* Dev or Robot Prog Team */}
           <Box
             sx={{
@@ -70,7 +78,10 @@ const Team = () => {
             }}
           >
             {teamData().map((member) => {
-              if (member.designation.includes("Robot Programming") || member.designation.includes("Dev Team")) {
+              if (
+                member.designation.includes("Robot Programming") ||
+                member.designation.includes("Dev Team")
+              ) {
                 return (
                   <TeamMember
                     name={member.name}
