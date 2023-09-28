@@ -27,18 +27,19 @@ const Team = () => {
               padding: 10,
               display: "flex",
               gap: 7,
-              justifyContent: "center",
               overflowX: "auto",
             }}
           >
             {teamData().map((member) => {
               if (member.designation == "Technical Advisor") {
                 return (
-                  <TeamMember
-                    name={member.name}
-                    designation={member.designation}
-                    imgUrl={member.imgUrl}
-                  />
+                  <Box style={{ margin: "0 auto" }}>
+                    <TeamMember
+                      name={member.name}
+                      designation={member.designation}
+                      imgUrl={member.imgUrl}
+                    />
+                  </Box>
                 );
               }
             })}
@@ -57,11 +58,13 @@ const Team = () => {
             {teamData().map((member) => {
               if (member.designation == "Mechanical and System Design") {
                 return (
-                  <TeamMember
-                    name={member.name}
-                    designation={member.designation}
-                    imgUrl={member.imgUrl}
-                  />
+                  <Box style={{ margin: "0 auto" }}>
+                    <TeamMember
+                      name={member.name}
+                      designation={member.designation}
+                      imgUrl={member.imgUrl}
+                    />
+                  </Box>
                 );
               }
             })}
@@ -83,11 +86,13 @@ const Team = () => {
                 member.designation.includes("Dev Team")
               ) {
                 return (
-                  <TeamMember
-                    name={member.name}
-                    designation={member.designation}
-                    imgUrl={member.imgUrl}
-                  />
+                  <Box style={{ margin: "0 auto" }}>
+                    <TeamMember
+                      name={member.name}
+                      designation={member.designation}
+                      imgUrl={member.imgUrl}
+                    />
+                  </Box>
                 );
               }
             })}
