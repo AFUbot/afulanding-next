@@ -31,7 +31,10 @@ const Team = () => {
             }}
           >
             {teamData().map((member) => {
-              if (member.designation == "Technical Advisor") {
+              if (
+                member.designation == "Technical Advisor" ||
+                member.designation == "Project Supervisor"
+              ) {
                 return (
                   <Box style={{ margin: "0 auto" }}>
                     <TeamMember
