@@ -45,7 +45,6 @@ function Navbar() {
                   className={
                     pathname === "/" ? "navbuttonselected" : "navbutton"
                   }
-                  sx={{ color: "white" }}
                 >
                   Home
                 </Button>
@@ -55,7 +54,6 @@ function Navbar() {
                   className={
                     pathname === "/timeline" ? "navbuttonselected" : "navbutton"
                   }
-                  sx={{ color: "white" }}
                 >
                   Timeline
                 </Button>
@@ -65,7 +63,6 @@ function Navbar() {
                   className={
                     pathname === "/team" ? "navbuttonselected" : "navbutton"
                   }
-                  sx={{ color: "white" }}
                 >
                   Team
                 </Button>
@@ -75,7 +72,6 @@ function Navbar() {
                   className={
                     pathname === "/contact" ? "navbuttonselected" : "navbutton"
                   }
-                  sx={{ color: "white" }}
                 >
                   Contact
                 </Button>
