@@ -1,6 +1,6 @@
 "use client";
 
-import Timeline from "@/components/Timeline/timeline";
+import Timeline from "@/components/Timeline/timelineComp";
 import { Box } from "@mui/material";
 import React from "react";
 

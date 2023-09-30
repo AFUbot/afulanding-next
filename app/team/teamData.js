@@ -38,7 +38,7 @@ const teamData = () => {
     {
       name: "Fahad Tanvir",
       designation: "Mechanical and System Design",
-      imgUrl: "",
+      imgUrl: "./team/Fahad.JPG",
     },
     {
       name: "Samiur",
