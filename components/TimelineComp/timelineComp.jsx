@@ -19,7 +19,7 @@ import sdphase1 from "../../public/timeline/sysdesign1.JPG";
 const Timeline = () => {
   return (
     <div>
-      {/* <VerticalTimeline>
+      <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
@@ -96,7 +96,7 @@ const Timeline = () => {
             AJ20 robot, a functioning website and admin control panel.
           </p>
         </VerticalTimelineElement>
-      </VerticalTimeline> */}
+      </VerticalTimeline>
     </div>
   );
 };
