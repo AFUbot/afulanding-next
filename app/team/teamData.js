@@ -53,7 +53,7 @@ const teamData = () => {
     {
       name: "Dr. Nur Haliza",
       designation: "Project Supervisor",
-      imgUrl: "",
+      imgUrl: "./team/DrHaliza.jpg",
     },
   ];
   return teamData;
