@@ -50,11 +50,11 @@ const teamData = () => {
       designation: "Technical Advisor",
       imgUrl: "./team/Anas Amer.jpg",
     },
-    {
-      name: "Dr. Nur Haliza",
-      designation: "Project Supervisor",
-      imgUrl: "./team/DrHaliza.jpg",
-    },
+    // {
+    //   name: "Dr. Nur Haliza",
+    //   designation: "Project Supervisor",
+    //   imgUrl: "./team/DrHaliza.jpg",
+    // },
   ];
   return teamData;
 };
